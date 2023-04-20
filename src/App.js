@@ -8,7 +8,7 @@ function App() {
   const [income,setIncome] = useState([]);
   const [totalIncome,setTotalIncome] = useState(0);
 
-  // list out the incomes
+  // income內容改變，useEffect裡面的函式 setTotalIncome() 被執行，總金額跟著改變
   useEffect(() => {
     let currentPrice = 0;
     for(let i = 0; i<income.length; i++){
